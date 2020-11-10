@@ -11,18 +11,6 @@
     "format": "prettier --config .prettierrc --write \"./**/*.+(js|vue|json|yml|yaml|css|scss)\" --ignore-path .eslintignore",
     "lint": "npm run lint:js"
   },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "npm run lint",
-      "npm run format",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "core-js": "^3.6.5",
     "destyle.css": "^2.0.2",
