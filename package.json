@@ -9,7 +9,9 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "format": "prettier --config .prettierrc --write \"./**/*.+(js|vue|json|yml|yaml|css|scss)\" --ignore-path .eslintignore",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "specify:sync": "specify sync -C .specifyrc/light-theme.js && specify sync -C .specifyrc/dark-theme.js",
+    "specify:extract": "specify extract -C .specifyrc/light-theme.js && specify extract -C .specifyrc/dark-theme.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
