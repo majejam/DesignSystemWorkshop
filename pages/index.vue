@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <Toggle />
       <h1 class="title">workshop-1</h1>
       <div class="links">
         <a
