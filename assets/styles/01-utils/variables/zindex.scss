@@ -3,7 +3,9 @@
 // --------------------------------------------------
 
 $zindex: (
-    below:   -1,
-    default: 1,
-    above: 2,
+  below: -1,
+  default: 1,
+  above: 2,
+  backdrop: 4,
+  modal: 5,
 );

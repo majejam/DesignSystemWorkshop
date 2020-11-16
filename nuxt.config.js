@@ -10,9 +10,15 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: ['~/node_modules/destyle.css', 'assets/styles/main.scss'],
+  css: ['@/assets/styles/main.scss'],
+  /*
+   ** Import SCSS for components
+   */
+  styleResources: {
+    scss: ['@/assets/styles/main.scss'],
+  },
   plugins: [],
   components: true,
-  modules: [],
+  modules: ['@nuxtjs/style-resources'],
   build: {},
 }

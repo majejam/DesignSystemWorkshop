@@ -3,25 +3,11 @@
     <div>
       <Toggle v-model="checked" />
       <TextInput v-model="text" :name="'Text input'" />
+      <Button :content="'hellow'" @click.native="toggle()" />
+      <Modal :visible="isShown" fullscreen>
+        <span>'slt la team</span>
+      </Modal>
       <h1 class="title">{{ checked }}</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>
@@ -32,7 +18,14 @@ export default {
     return {
       checked: false,
       text: '',
+      isShown: false,
     }
+  },
+  methods: {
+    toggle() {
+      this.isShown = this.isShown ? false : true
+      console.log(this.isShown)
+    },
   },
 }
 </script>
