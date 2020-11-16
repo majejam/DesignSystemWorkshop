@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <Toggle />
-      <h1 class="title">workshop-1</h1>
+      <Toggle v-model="checked" />
+      <TextInput v-model="text" :name="'Text input'" />
+      <h1 class="title">{{ checked }}</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -27,6 +28,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      checked: false,
+      text: '',
+    }
+  },
 }
 </script>
 
