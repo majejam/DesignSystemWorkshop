@@ -1,6 +1,6 @@
 <template>
   <button class="Button" type="submit">
-    <span>{{ content }}</span>
+    <span class="Button__content">{{ content }}</span>
   </button>
 </template>
 <script>
@@ -27,7 +27,7 @@ export default {
   will-change: background-color;
   cursor: pointer;
 
-  &__text {
+  &__content {
     color: inherit;
     text-decoration: none;
     font-size: 0.875rem; //a variabler

@@ -39,12 +39,16 @@ export default {
   }
 
   &__backdrop {
-    background-color: grey;
+    background-color: var(--main-black);
+    opacity: 0.8;
     z-index: zindex(backdrop);
   }
 
   &__content {
     z-index: zindex(modal);
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
   }
 
   &__fade-enter-active,

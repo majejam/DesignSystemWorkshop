@@ -1,6 +1,6 @@
 <template>
   <div class="ToggleButton">
-    <label class="ToggleButton-switch"
+    <label class="ToggleButton__switch"
       ><input
         type="checkbox"
         :value="model"
@@ -39,7 +39,7 @@ export default {
   margin: auto;
   text-align: center;
 
-  &-switch {
+  &__switch {
     display: inline-block;
     font-size: 20px; /* 1 */
     height: 1em;

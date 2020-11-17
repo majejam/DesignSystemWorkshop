@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Toggle v-model="checked" />
+      <DarkModeSwitch />
       <TextInput v-model="text" :name="'Text input'" />
       <Button :content="'hellow'" @click.native="toggle()" />
       <Modal :visible="isShown" fullscreen>
