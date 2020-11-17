@@ -4,7 +4,7 @@
       <Toggle v-model="checked" />
       <DarkModeSwitch />
       <TextInput v-model="text" :name="'Text input'" />
-      <Button :content="'hellow'" @click.native="toggle()" />
+      <Button :content="'hellow'" danger @click.native="toggle()" />
       <Modal :visible="isShown" fullscreen>
         <span>'slt la team</span>
       </Modal>

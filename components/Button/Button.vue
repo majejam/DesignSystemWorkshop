@@ -1,5 +1,8 @@
 <template>
-  <button class="Button" type="submit">
+  <button
+    :class="['Button', { 'Button--primary': primary, 'Button--danger': danger }]"
+    type="submit"
+  >
     <span class="Button__content">{{ content }}</span>
   </button>
 </template>
@@ -10,6 +13,12 @@ export default {
       required: true,
       type: String,
     },
+    primary: {
+      type: Boolean,
+    },
+    danger: {
+      type: Boolean,
+    },
   },
 }
 </script>
@@ -17,15 +26,24 @@ export default {
 .Button {
   display: inline-flex;
   align-items: center;
-  height: 50px; //a variabler
-  padding-left: 50px; //a variabler
-  padding-right: 50px; //a variabler
+  /* height: 50px; //a variabler */
+  padding: $button-main-vertical-padding $button-main-horizontal-padding;
   color: inherit;
   text-decoration: none;
-  border-radius: 20px; //a variabler
+  border-radius: $button-main-radius; //a variabler
   transition: all 0.3s ease-in-out;
   will-change: background-color;
   cursor: pointer;
+
+  &--primary {
+    color: var(--main-black);
+    background-color: var(--main-yellow-dark);
+  }
+
+  &--danger {
+    color: var(--main-white);
+    background-color: var(--main-red);
+  }
 
   &__content {
     color: inherit;
