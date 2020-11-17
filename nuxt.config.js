@@ -15,7 +15,7 @@ export default {
    ** Import SCSS for components
    */
   styleResources: {
-    scss: ['@/assets/styles/main.scss'],
+    scss: ['@/assets/styles/import.scss'],
   },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference

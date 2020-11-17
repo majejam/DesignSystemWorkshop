@@ -7,6 +7,13 @@
 //@import 'variables/colors/dark-theme.scss';
 
 /**
+* Fonts
+*/
+
+@import 'variables/fonts/font-face';
+@import 'variables/fonts/font-weight';
+
+/**
 * Mixins
 */
 @import 'mixins';
