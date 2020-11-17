@@ -1,14 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <Toggle v-model="checked" />
-      <DarkModeSwitch />
+      <Toggle v-model="colorMode" @change="darkModeToggle" />
       <TextInput v-model="text" :name="'Text input'" />
       <Button :content="'hellow'" @click.native="toggle()" />
       <Modal :visible="isShown" fullscreen>
         <span>'slt la team</span>
       </Modal>
-      <h1 class="title">{{ checked }}</h1>
+      <h1 class="title">{{ colorMode }}</h1>
     </div>
   </div>
 </template>
@@ -17,7 +16,7 @@
 export default {
   data() {
     return {
-      checked: false,
+      colorMode: this.$colorMode.preference == 'dark' ? true : false,
       text: '',
       isShown: false,
     }
@@ -26,6 +25,11 @@ export default {
     toggle() {
       this.isShown = this.isShown ? false : true
       console.log(this.isShown)
+    },
+    darkModeToggle() {
+      this.colorMode
+        ? (this.$colorMode.preference = 'dark')
+        : (this.$colorMode.preference = 'light')
     },
   },
 }
