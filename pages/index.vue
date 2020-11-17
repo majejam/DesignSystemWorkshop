@@ -7,7 +7,7 @@
       <Modal :visible="isShown" fullscreen>
         <span>'slt la team</span>
       </Modal>
-      <h1 class="title">{{ colorMode }}</h1>
+      <TextComp tag="h1" text="slt" />
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      colorMode: this.$colorMode.preference == 'dark' ? true : false,
+      colorMode: this.$colorMode.value == 'dark' ? true : false,
       text: '',
       isShown: false,
     }
