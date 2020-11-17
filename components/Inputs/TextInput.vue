@@ -1,14 +1,14 @@
 <template>
   <div class="TextInput">
+    <label :class="[{ active: model }, 'u-no-select']" :for="name">{{ label }}</label>
     <input
       :id="name"
       :value="model"
-      type="text"
+      :type="type"
       @input="updateSelf($event.target.value)"
       @change="emitChange"
       class="validate"
     />
-    <label :class="[{ active: model }, 'u-no-select']" :for="name">{{ name }}</label>
   </div>
 </template>
 
@@ -29,6 +29,15 @@ export default {
       type: String,
       default: '',
     },
+    type: {
+      required: true,
+      type: String,
+      default: '',
+    },
+    label: {
+      type: String,
+      default: '',
+    },
   },
   methods: {
     updateSelf(model) {
@@ -41,4 +50,20 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.TextInput {
+  display: flex;
+  flex-direction: column;
+  input {
+    background-color: var(--form-background-initial);
+    max-width: 310px;
+    height: 34px;
+    font-family: $input-font;
+    font-size: $input-size;
+    font-weight: $input-weight;
+    line-height: $input-line-height;
+    border-radius: $input-radius;
+    color: var(--form-text-main);
+  }
+}
+</style>

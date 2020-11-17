@@ -26,11 +26,10 @@ export default {
 .Button {
   display: inline-flex;
   align-items: center;
-  /* height: 50px; //a variabler */
   padding: $button-main-vertical-padding $button-main-horizontal-padding;
   color: inherit;
   text-decoration: none;
-  border-radius: $button-main-radius; //a variabler
+  border-radius: $button-main-radius;
   transition: all 0.3s ease-in-out;
   will-change: background-color;
   cursor: pointer;
@@ -48,9 +47,10 @@ export default {
   &__content {
     color: inherit;
     text-decoration: none;
-    font-size: 0.875rem; //a variabler
-    line-height: 1.6; //a variabler
-    font-family: 'Arial'; //a variabler
+    font-size: $button-size;
+    line-height: $button-line-height;
+    font-family: $button-font;
+    font-weight: $button-weight;
   }
 }
 </style>

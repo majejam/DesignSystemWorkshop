@@ -2,7 +2,7 @@ export default {
   ssr: false,
   target: 'static',
   head: {
-    title: 'workshop-1',
+    title: 'User Dashboard',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

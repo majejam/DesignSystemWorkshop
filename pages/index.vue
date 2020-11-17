@@ -2,8 +2,8 @@
   <div class="container">
     <div>
       <Toggle v-model="colorMode" @change="darkModeToggle" />
-      <TextInput v-model="text" :name="'Text input'" />
-      <Button :content="'hellow'" danger @click.native="toggle()" />
+      <TextInput v-model="text" :name="'Text input'" :type="'text'" :label="'Fullname'" />
+      <Button :content="'Delete'" danger @click.native="toggle()" />
       <Modal :visible="isShown" fullscreen>
         <span>'slt la team</span>
       </Modal>
