@@ -3,7 +3,7 @@
     <div>
       <Toggle v-model="colorMode" @change="darkModeToggle" />
       <TextInput v-model="text" :name="'Text input'" />
-      <Button :content="'hellow'" @click.native="toggle()" />
+      <Button :content="'hellow'" danger @click.native="toggle()" />
       <Modal :visible="isShown" fullscreen>
         <span>'slt la team</span>
       </Modal>
