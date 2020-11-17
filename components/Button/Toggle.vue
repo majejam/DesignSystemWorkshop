@@ -3,6 +3,7 @@
     <label class="ToggleButton__switch"
       ><input
         type="checkbox"
+        :checked="model"
         :value="model"
         @input="updateSelf($event.target.checked)"
         @change="emitChange"

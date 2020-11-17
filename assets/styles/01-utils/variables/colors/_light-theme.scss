@@ -1,10 +1,34 @@
-:root[data-theme="light"] {
+.light-mode {
   /* COLOR */
   --blue-2: rgb(45, 156, 219);
   --blue-3: rgb(86, 204, 242);
+  --cta-background-disable: rgb(244, 244, 244);
+  --cta-main-hover: rgb(241, 196, 15);
+  --cta-main-initial: rgb(255, 207, 15);
+  --cta-main-text: rgb(27, 27, 27);
+  --cta-secondary-hover: rgb(200, 0, 0);
+  --cta-secondary-initial: rgb(255, 26, 26);
+  --cta-secondary-text: rgb(255, 255, 255);
+  --cta-stroke-main: rgb(255, 207, 15);
+  --cta-stroke-secondary: rgb(255, 26, 26);
+  --cta-text-disable: rgb(128, 128, 128);
+  --form-background-error: rgb(255, 223, 223);
+  --form-background-initial: rgb(244, 244, 244);
+  --form-background-success: rgb(215, 252, 217);
+  --form-stroke-error: rgb(255, 26, 26);
+  --form-stroke-succes: rgb(0, 202, 8);
+  --form-stroke-write: rgb(196, 196, 196);
+  --form-text-error: rgb(255, 26, 26);
+  --form-text-main: rgb(27, 27, 27);
+  --form-text-secondary: rgb(128, 128, 128);
+  --form-text-success: rgb(0, 202, 8);
+  --items-background-active: rgb(254, 249, 231);
+  --items-background-initial: rgb(255, 255, 255);
+  --items-text-disable: rgb(128, 128, 128);
+  --items-text-initial: rgb(27, 27, 27);
   --main-black: rgb(27, 27, 27);
   --main-green: rgb(0, 202, 8);
-  --main-green-light: rgb(149, 248, 153);
+  --main-green-light: rgb(215, 252, 217);
   --main-grey: rgb(196, 196, 196);
   --main-grey-dark: rgb(128, 128, 128);
   --main-grey-light: rgb(244, 244, 244);
@@ -18,5 +42,10 @@
   --main-yellow-lighter: rgb(254, 249, 231);
   --orange: rgb(242, 153, 74);
   --red: rgb(235, 87, 87);
+  --selector-background: rgb(244, 244, 244);
+  --selector-switch-active: rgb(27, 27, 27);
+  --selector-switch-button: rgb(255, 255, 255);
+  --selector-switch-disable: rgb(196, 196, 196);
+  --selector-text: rgb(27, 27, 27);
   --yellow: rgb(242, 201, 76);
 }

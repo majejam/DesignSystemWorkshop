@@ -21,7 +21,7 @@ module.exports = {
           name: 'to-css-custom-properties',
           options: {
             formatConfig: {
-              selector: ":root[data-theme='dark']",
+              selector: '.dark-mode',
             },
           },
         },
